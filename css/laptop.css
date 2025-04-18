@@ -1,0 +1,21 @@
+@media(max-width:1145px) {
+    .main_tag {
+        padding: 60px;
+    }
+
+    .section1 {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 32px;
+    }
+
+    .cart_section {
+        width: 100%;
+    }
+
+    .article_section {
+        column-gap: 17px;
+    }
+
+
+}

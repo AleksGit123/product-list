@@ -1,0 +1,264 @@
+.main_tag {
+    width: min(100%, 1440px);
+    margin: auto;
+    padding: 80px;
+    user-select: none;
+}
+
+.font {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* text-wrap: nowrap; */
+}
+
+.index_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.deserts {
+    font-size: 36px;
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+}
+
+.theme_change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #fcf9f7;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+}
+
+.theme_change:hover {
+    border: 2px solid hsl(14, 86%, 42%);
+    ;
+}
+
+@keyframes before {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: .8
+    }
+}
+
+.dark {
+    animation: dark .5s 1 forwards;
+}
+
+.moon {
+    animation: moon .5s 1 forwards;
+}
+
+@keyframes dark {
+    from {
+        opacity: 0;
+        left: 70px;
+    }
+
+    to {
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+@keyframes moon {
+    from {
+        opacity: 1;
+        left: 50%;
+    }
+
+    to {
+        opacity: 0;
+        left: 70px;
+    }
+}
+
+.light {
+    animation: light .5s 1 forwards;
+}
+
+@keyframes light {
+    from {
+        opacity: 1;
+        left: 50%
+    }
+
+    to {
+        opacity: 0;
+        left: -70px;
+    }
+}
+
+.sun {
+    animation: sun .5s 1 forwards;
+}
+
+@keyframes sun {
+    from {
+        opacity: 0;
+        left: -70px;
+    }
+
+    to {
+        opacity: 1;
+        left: 50%
+    }
+}
+
+.fa-moon,
+.fa-sun {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    transition: transform 0.5s ease, color 0.5s ease;
+    z-index: 1;
+}
+
+.hide {
+    opacity: 0;
+    left: 70px;
+}
+
+/* section1 */
+.section1 {
+    display: flex;
+    column-gap: 32px;
+}
+
+.article_section {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.section1 article {
+    display: flex;
+    flex: 1 0 245px;
+    flex-direction: column;
+    row-gap: 30px;
+    position: relative;
+}
+
+.image_div {
+    overflow: hidden;
+    border-radius: 10px;
+    height: 234px;
+}
+
+.image_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.add_chart {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    width: 147px;
+    height: 39px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: 1px solid hsl(14, 65%, 9%);
+    padding-block: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.add_chart:hover {
+    background-color: hsl(159, 82%, 46%);
+    border-color: hsl(159, 82%, 46%);
+}
+
+.add_chart:hover .cart_icon {
+    transform: translateX(50px);
+}
+
+
+.add_chart:hover .add_to_chart {
+    opacity: 0;
+}
+
+.cart_icon {
+    width: 21px;
+    height: 19px;
+    transition: .5s ease-out;
+}
+
+.add_to_chart {
+    font-weight: 500;
+    font-size: 15px;
+    transition: .2s ease-in;
+    color: #5a0000;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.name {
+    color: hsl(12, 20%, 44%);
+    font-size: 14px;
+}
+
+.full_name {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+}
+
+.price {
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cart_section {
+    display: flex;
+    row-gap: 15px;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 334px;
+    height: 226px;
+    padding: 16px 24px;
+}
+
+.your_cart {
+    font-size: 20px;
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+}
+
+.brown_cake {
+    align-self: center;
+    width: 128px;
+    height: 128px;
+}
+
+.cart_section_p {
+    font-size: 14px;
+    color: hsl(12, 20%, 44%);
+    text-align: center;
+}
