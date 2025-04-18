@@ -1,0 +1,41 @@
+body {
+    background-color: #0d1b2a;
+}
+
+/* header */
+
+.deserts {
+    color: #FFB347;
+}
+
+/* .theme_change {
+    border-color: #0d1b2a;
+} */
+
+.theme_change:hover {
+    border: 2px solid #FFB347;
+    ;
+}
+
+/* section1 */
+
+.add_chart {
+    background-color: #6f4f28;
+    border-color: #6f4f28;
+}
+
+.add_to_chart {
+    color: #FDF6EC;
+}
+
+.name {
+    color: #9CA3AF;
+}
+
+.full_name {
+    color: #FF6F61;
+}
+
+.your_cart {
+    color: #FFB347;
+}
