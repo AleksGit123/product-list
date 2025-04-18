@@ -22,7 +22,7 @@ theme_change_btn.addEventListener("click", () => {
 let dark_mode_on = function(){
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "css/darkmode.css";
+    link.href = "/css/darkmode.css";
     link.id = "dark_theme"
     document.head.appendChild(link);
 }
