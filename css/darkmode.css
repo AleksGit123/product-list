@@ -8,9 +8,9 @@ body {
     color: #FFB347;
 }
 
-.theme_change {
+/* .theme_change {
     border-color: #0d1b2a;
-}
+} */
 
 .theme_change:hover {
     border: 2px solid #FFB347;
