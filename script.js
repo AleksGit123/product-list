@@ -19,19 +19,19 @@ theme_change_btn.addEventListener("click", () => {
     }
 });
 
-let dark_mode_on = function(){
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "css/darkmode.css";
-    link.id = "dark_theme"
-    document.head.appendChild(link);
-}
-console.log(dark_mode_on());
+// let dark_mode_on = function(){
+//     const link = document.createElement("link");
+//     link.rel = "stylesheet";
+//     link.href = "css/darkmode.css";
+//     link.id = "dark_theme"
+//     document.head.appendChild(link);
+// }
+// console.log(dark_mode_on());
 
-let dark_mode_off = function(){
-    const dark_link = document.getElementById("dark_theme");
-    document.head.removeChild(dark_link);
-}
-console.log(dark_mode_off());
+// let dark_mode_off = function(){
+//     const dark_link = document.getElementById("dark_theme");
+//     document.head.removeChild(dark_link);
+// }
+// console.log(dark_mode_off());
 
 // .theme_change_btn.addEventListener("mouseout")
